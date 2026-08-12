@@ -11,7 +11,6 @@ public class GameEngine {
 
 private static final int FPS = 60;
 private static final int FRAME_TIME = 1000 / FPS;
-private int o = 0;
 
 private static final int DAS = 200;
 private static final int ARR = 50;
