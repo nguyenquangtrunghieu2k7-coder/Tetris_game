@@ -88,7 +88,7 @@ public abstract class Piece {
             quét shape rồi lấy tọa độ của tất cả ô có block. */
         for (int r = 0; r<rows; r++) {
             for (int c = 0; c<cols; c++) {
-                if (shape[r][c] == 1){
+                if (shape[r][c] != 0){
                     cells.add(new int[] {r,c});
                 }
             } 
@@ -134,6 +134,9 @@ public abstract class Piece {
             copy[i]=offsets[i].clone();
         }
         return copy;
+    }
+    public int[] getPosition() {
+        return new int[] {row, col};
     }
 
 

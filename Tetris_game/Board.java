@@ -18,9 +18,9 @@ public class Board {
         }
     public void placePiece(Piece piece) {
         int[][] cells = piece.getAbsoluteCells();
-
+        int id = piece.getType().ordinal() + 1;
         for (int i = 0; i<cells.length; i++) {
-            grid[cells[i][0]][cells[i][1]] = 1;
+            grid[cells[i][0]][cells[i][1]] = id;
         }
     }
 

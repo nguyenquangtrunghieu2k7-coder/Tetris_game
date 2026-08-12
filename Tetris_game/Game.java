@@ -65,12 +65,12 @@ public class Game {
         currentPiece.move(1,0);
         if (!(board.isValid((currentPiece)))) {
             currentPiece.move(-1, 0);
-            freezePiece();
             return false;
         }
         return true;
     }
-    private void freezePiece() {
+
+    public void lockPiece() {
         board.placePiece(currentPiece);
         int combo = board.clearLines();
         updateScore(combo);
@@ -92,22 +92,35 @@ public class Game {
                 break;
             }
         }
-        freezePiece();
+        lockPiece();
     }
     public void hold() {
         if (holdUsed) return;
 
         holdUsed = true; 
         if (holdPiece == null) {
-            holdPiece = currentPiece;
+            holdPiece = PieceFactory.create(currentPiece.getType());
             spawnPiece();
             return;
         }
 
         PieceType type = holdPiece.getType();
-        holdPiece = currentPiece;
+        PieceType currentType = currentPiece.getType();
+        holdPiece = PieceFactory.create(currentType);
         currentPiece = PieceFactory.create(type);
+        if (!board.isValid(currentPiece)) {
+            gameOver = true;
+        }
 
+    }
+    public boolean isOnGround() {
+        currentPiece.move(1,0);
+
+        boolean result = !board.isValid(currentPiece);
+
+        currentPiece.move(-1,0);
+
+        return result;
     }
     public boolean rotateCW() {
         return RotationSystem.tryRotateCW(board, currentPiece);

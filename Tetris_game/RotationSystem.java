@@ -133,6 +133,23 @@ public final class RotationSystem {
             int dy = kick[1];
 
             piece.setPosition(oldRow + dy, oldCol + dx);
+            /*Tại sao:
+                row + dy
+                col + dx
+                Vì:
+                Matrix:
+                row tăng xuống dưới
+                col tăng sang phải
+                Nên:
+                dy ảnh hưởng row.
+                dx ảnh hưởng col.
+                Ví dụ:
+                kick = {-1,0}
+                Thành:
+                row = oldRow
+                col = oldCol -1
+                Tức là dịch trái. */
+                // Quan trong nhat cua SRS luon
 
             if (board.isValid(piece)) {
                 return true;
