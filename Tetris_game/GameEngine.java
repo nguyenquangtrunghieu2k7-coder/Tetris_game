@@ -1,6 +1,5 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 
@@ -12,6 +11,7 @@ public class GameEngine {
 
 private static final int FPS = 60;
 private static final int FRAME_TIME = 1000 / FPS;
+private int o = 0;
 
 private static final int DAS = 200;
 private static final int ARR = 50;
