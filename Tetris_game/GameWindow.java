@@ -16,7 +16,6 @@ public class GameWindow extends JFrame {
     private final GameEngine engine;
     private final Renderer renderer;
     private final GamePanel panel;
-    private int o = 0;
 
     // =====================================================
     // Cờ chống dội phím (Anti-Key Repeat Flags)
