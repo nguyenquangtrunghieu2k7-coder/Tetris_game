@@ -4,7 +4,6 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -17,6 +16,7 @@ public class GameWindow extends JFrame {
     private final GameEngine engine;
     private final Renderer renderer;
     private final GamePanel panel;
+    private int o = 0;
 
     // =====================================================
     // Cờ chống dội phím (Anti-Key Repeat Flags)
