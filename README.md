@@ -12,6 +12,8 @@ Mục tiêu của dự án không chỉ là tạo ra một game Tetris có thể
 * Xử lý Input thời gian thực
 * Thuật toán xoay khối hiện đại (SRS)
 * Cơ chế Randomizer chuẩn Tetris Guideline
+  
+<p align="center"> <img src="https://skillicons.dev/icons?i=java,git,github" alt="Tech Stack" /> </p>
 
 ---
 
