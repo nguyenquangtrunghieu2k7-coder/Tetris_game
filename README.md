@@ -1,4 +1,8 @@
+<div align="center"> <img src="https://api.iconify.design/lucide/gamepad-2.svg?color=%23FF5722" width="80" height="80" alt="Modern Tetris Java" />
 # 🧱 TETRIS FROM ZERO: THE MODERN WAY
+![Architecture](https://img.shields.io/badge/Architecture-OOP-blue?style=for-the-badge)
+![Algorithm](https://img.shields.io/badge/Algorithm-7Bag%20%2B%20SRS-green?style=for-the-badge)
+![Rendering](https://img.shields.io/badge/Rendering-Java2D-orange?style=for-the-badge)
 
 ### Xây dựng Game Tetris chuẩn thi đấu quốc tế (Guideline) từ con số 0 với Java Swing
 
