@@ -521,8 +521,8 @@ keyReleased
 ## 1. Clone project
 
 ```bash
-git clone https://github.com/your-username/Modern-Tetris-Java.git
-cd Modern-Tetris-Java
+git clone https://github.com/your-username/Tetris_game.git
+cd Tetris_game
 ```
 
 ## 2. Compile
